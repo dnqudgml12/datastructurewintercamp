@@ -1,0 +1,18 @@
+<form action="http://localhost:5000/" method="post">
+    <!-- 서버로 부터 사용자가 데이터를 가져올때는 get방식 사용 method='get', 생략하면 get 방식 -->
+    <!-- 하지만 서버에 데이터를 수정 삭제 생성 같은 거 할때는 반드시 method=post 사람 눈에 보이지 않게 은밀하게 이렇게 하면 아주 크게 전송가능 -->
+<!--  전송을 어디로 할지 action으로 하면 이 주소로 전송-->
+<p><input type="text" name="title"></p>
+<p>
+    <!-- 여러줄 입력 -->
+    <textarea name="description">
+        
+    </textarea>
+</p>
+<p>
+    <input type="submit" > 
+    <!--  전송버튼 -->
+</p>
+</form>
+<!-- form안에 있는 가각ㄱ의 사용자가 입력한 정보를 submit눌렀을 떄 
+action string에 있는 주소에 query string으로 만든다. -->
